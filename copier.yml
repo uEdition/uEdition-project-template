@@ -1,0 +1,24 @@
+# User-provided settings
+edition_name:
+    type: str
+    help: What is the name of your μEdition?
+
+author_name:
+    type: str
+    help: What is your name?
+
+author_email:
+    type: str
+    help: What is your e-mail address?
+
+publishing:
+    type: bool
+    help: Do you wish to automatically publish using GitHub Pages?
+    default: true
+
+# Copier settings
+_exclude:
+  - copier.yml
+  - .git
+  - README.md
+  - LICENSE
