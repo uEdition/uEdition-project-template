@@ -5,11 +5,11 @@ edition_name:
 
 author_name:
   type: str
-  help: What is your name?
+  help: What is the μEdition author's name?
 
 author_email:
   type: str
-  help: What is your e-mail address?
+  help: What is the μEdition author's address?
 
 publishing:
   type: bool
