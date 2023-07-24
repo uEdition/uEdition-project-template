@@ -12,9 +12,12 @@ author_email:
   help: What is the μEdition author's e-mail address?
 
 publishing:
-  type: bool
-  help: Do you wish to automatically publish using GitHub Pages?
-  default: true
+  type: str
+  help: Do you wish to automatically publish your μEdition?
+  choices:
+    Disable automatic publishing: ''
+    Via GitHub Pages: github_pages
+    Via Read the Docs: readthedocs
 
 repository_url:
   type: str
@@ -31,3 +34,4 @@ _exclude:
   - .git
   - README.md
   - LICENSE
+  - tests
