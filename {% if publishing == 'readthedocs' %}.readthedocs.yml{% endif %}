@@ -7,8 +7,8 @@ build:
   commands:
     - "pip install hatch"
     - "hatch run build"
-    - "mkdir _readthedocs"
-    - "mv site _readthedocs/html"
+    - "mkdir $READTHEDOCS_OUTPUT"
+    - "mv site $READTHEDOCS_OUTPUT/html"
 
 python:
   install:
