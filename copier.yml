@@ -9,7 +9,7 @@ author_name:
 
 author_email:
   type: str
-  help: What is the μEdition author's address?
+  help: What is the μEdition author's e-mail address?
 
 publishing:
   type: bool
