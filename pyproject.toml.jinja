@@ -30,6 +30,6 @@ Issues = "{{ repository_url }}/-/issues"
 Source = "{{ repository_url }}/-"
 
 [tool.hatch.envs.default.scripts]
-build = "uEdition build"
-serve = "uEdition serve"
-update = "uEdition update"
+build = "uEdition build {args}"
+serve = "uEdition serve {args}"
+update = "uEdition update {args}"
