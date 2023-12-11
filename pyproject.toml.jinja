@@ -8,19 +8,19 @@ description = 'The {{ edition_name }} μEdition'
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = []
-authors = [
-  { name = "{{ author_name }}", email = "{{ author_email }}" },
-]
+authors = [{ name = "{{ author_name }}", email = "{{ author_email }}" }]
 classifiers = []
-dependencies = [
-  "uedition>=0.7.0",
-]
+dependencies = []
 version = "1.0.0"
 
 [project.urls]
 Documentation = "{{ repository_url }}/-#readme"
 Issues = "{{ repository_url }}/-/issues"
 Source = "{{ repository_url }}/-"
+
+[tool.hatch.envs.default]
+dependencies = ["uedition>=0.7.0",]
+skip-install = true
 
 [tool.hatch.envs.default.scripts]
 build = "uEdition build {args}"
