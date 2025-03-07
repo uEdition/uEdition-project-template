@@ -19,12 +19,10 @@ Issues = "{{ repository_url }}/-/issues"
 Source = "{{ repository_url }}/-"
 
 [tool.hatch.envs.default]
-dependencies = ["uedition>=1.3.2,<2",]
+dependencies = ["uedition>=2.0.0b0,<3",]
 skip-install = true
 
 [tool.hatch.envs.default.scripts]
 build = "uEdition build {args}"
 serve = "uEdition serve {args}"
 update = "uEdition update {args}"
-add-language = "uEdition language add {args}"
-update-language = "uEdition language update {args}"
